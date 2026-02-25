@@ -251,5 +251,22 @@ require_type_annotated_api_methods = True
 # Translation
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
-# ignore_translatable_strings_from = []
+
+# Extended hooks
+jinja = {
+	"methods": [
+		"frappe_crm.utils.jinja.get_lead_link"
+	]
+}
+
+doctype_js = {"CRM Lead": "public/js/crm_lead.js"}
+
+scheduler_events = {
+}
+
+fixtures = [
+	{"dt": "Custom Field", "filters": [["module", "in", ["Frappe CRM", "CRM", "Papermark", "Formbricks"]]]},
+	{"dt": "Property Setter", "filters": [["module", "in", ["Frappe CRM", "CRM", "Papermark", "Formbricks"]]]}
+]
+
 
