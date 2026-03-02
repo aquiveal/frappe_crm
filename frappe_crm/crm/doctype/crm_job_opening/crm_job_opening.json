@@ -69,7 +69,8 @@
   {
    "fieldname": "website",
    "fieldtype": "Data",
-   "label": "Website"
+   "label": "Website",
+   "length": 255
   },
   {
    "fieldname": "section_break_2",
