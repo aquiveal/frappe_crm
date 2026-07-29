@@ -269,9 +269,3 @@ fixtures = [
 	{"dt": "Property Setter", "filters": [["module", "in", ["Frappe CRM", "CRM", "Papermark", "Formbricks"]]]}
 ]
 
-
-
-override_whitelisted_methods = {
-    "crm.api.doc.upsert": "frappe_crm.api.doc.upsert"
-}
-
